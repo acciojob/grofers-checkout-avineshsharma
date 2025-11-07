@@ -1,31 +1,45 @@
-<table id="grocery-table" border="1">
-  <tr>
-    <th>Item</th>
-    <th>Price</th>
-  </tr>
-  <tr>
-    <td class="item">Apples</td>
-    <td class="price" contenteditable="true">55</td>
-  </tr>
-  <tr>
-    <td class="item">Bananas</td>
-    <td class="price" contenteditable="true">75</td>
-  </tr>
-  <tr>
-    <td class="item">Oranges</td>
-    <td class="price" contenteditable="true">100</td>
-  </tr>
-  <tr>
-    <td class="item">Mangoes</td>
-    <td class="price" contenteditable="true">130</td>
-  </tr>
-  <tr>
-    <td class="item">Grapes</td>
-    <td class="price" contenteditable="true">50</td>
-  </tr>
-</table>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grocery Table</title>
+</head>
+<body>
 
-<br>
-<button onclick="calculateTotal()">Calculate Total</button>
-<p id="ans"></p>
+  <table id="grocery-table" border="1">
+    <tr>
+      <th>Item</th>
+      <th>Price</th>
+    </tr>
+    <tr>
+      <td class="item">Apples</td>
+      <td class="price" contenteditable="true">0</td>
+    </tr>
+    <tr>
+      <td class="item">Bananas</td>
+      <td class="price" contenteditable="true">0</td>
+    </tr>
+    <tr>
+      <td class="item">Oranges</td>
+      <td class="price" contenteditable="true">0</td>
+    </tr>
+    <tr>
+      <td class="item">Mangoes</td>
+      <td class="price" contenteditable="true">0</td>
+    </tr>
+    <tr>
+      <td class="item">Grapes</td>
+      <td class="price" contenteditable="true">0</td>
+    </tr>
+  </table>
+
+  <br>
+  <button onclick="calculateTotal()">Calculate Total</button>
+  <p id="ans"></p>
+
+  <!-- Make sure your JS file is loaded AFTER the button and table -->
+  <script src="script.js"></script>
+</body>
+</html>
 
